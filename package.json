@@ -1,0 +1,54 @@
+{
+  "name": "BoilerPlate",
+  "version": "1.0.0",
+  "description": "\"# boilerplate\"",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js",
+    "build": "webpack",
+    "start-dev": "webpack -w & nodemon server.js",
+    "build-watch": "webpack -w",
+    "start-server": "set JWT=shh&&nodemon server.js",
+    "seed": "node script/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mmussab/boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mmussab/boilerplate/issues"
+  },
+  "homepage": "https://github.com/Mmussab/boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sequelize": "^6.6.2"
+  }
+}
